@@ -1,0 +1,41 @@
+# Esquema Conceitual — Censo Escolar 2024
+
+## Entidades Principais
+
+### 🏫 ESCOLA
+- cod_escola (PK)
+- nome_escola
+- bairro
+- dependência_administrativa
+- localização
+
+### 🏗️ INFRAESTRUTURA
+- cod_escola (FK)
+- tem_internet
+- tem_biblioteca
+- tem_acessibilidade
+
+### 👥 TURMA
+- cod_turma (PK)
+- cod_escola (FK)
+- nivel_ensino
+- numero_alunos
+
+### 👩‍🏫 PROFESSOR
+- cod_professor (PK)
+- formacao
+- tempo_experiencia
+
+### 🌍 IBGE_BAIRROS
+- nome_bairro (PK)
+- densidade_populacional
+- renda_media
+
+---
+
+## Relacionamentos
+
+- ESCOLA 1 → 1 INFRAESTRUTURA  
+- ESCOLA 1 → N TURMA  
+- TURMA N → 1 PROFESSOR  
+- ESCOLA N → 1 IBGE_BAIRROS  
