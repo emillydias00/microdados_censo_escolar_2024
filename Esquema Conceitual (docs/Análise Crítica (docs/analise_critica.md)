@@ -1,0 +1,23 @@
+# Análise Crítica dos Microdados — Censo Escolar 2024
+
+## 1. Qualidade dos Dados
+Os microdados apresentam excelente padronização e consistência. Entretanto:
+
+- Existem valores faltantes em campos de infraestrutura.
+- Há variação significativa na qualidade dos registros por região.
+- Algumas escolas podem ter duplicidades devido à fusões administrativas.
+
+## 2. Limitações
+- Os dados não incluem desempenho dos alunos (SAEB é separado).
+- Professores podem atuar em múltiplas turmas, o que afeta análises diretas.
+
+## 3. Potencial Analítico
+- Correlação entre infraestrutura e território (via IBGE).
+- Distribuição de professores qualificados por bairro.
+- Mapeamento de desigualdade educacional.
+
+## 4. Recomendações
+- Cruzar com dados socioeconômicos do IBGE (renda, IDHM).
+- Criar indicadores compostos: Índice de Infraestrutura Escolar.
+- Normalizar nomes de bairros para análises robustas.
+
