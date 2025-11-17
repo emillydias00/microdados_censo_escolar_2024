@@ -1,0 +1,32 @@
+# Dicionário de Dados (Resumo) — Censo Escolar 2024
+
+### ESCOLA
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| cod_escola | inteiro | Identificador único |
+| nome_escola | texto | Nome oficial |
+| bairro | texto | Bairro onde está localizada |
+
+### INFRAESTRUTURA
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| tem_internet | booleano | Disponibilidade de internet |
+| tem_biblioteca | booleano | Escola possui biblioteca |
+| tem_acessibilidade | booleano | Possui estruturas adaptadas |
+
+### TURMA
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| nivel_ensino | texto | Fundamental, Médio, EJA etc |
+| numero_alunos | inteiro | Total de alunos na turma |
+
+### PROFESSOR
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| formacao | texto | Escolaridade do professor |
+| tempo_experiencia | inteiro | Anos de experiência |
+
+### IBGE_BAIRROS
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| densidade_populacional | numérico | Habitantes por km² |
