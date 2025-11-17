@@ -1,0 +1,22 @@
+SELECT 
+  E.cod_escola,
+  E.nome_escola,
+  E.bairro,
+
+  I.tem_internet,
+  I.tem_biblioteca,
+  I.tem_acessibilidade,
+
+  T.nivel_ensino,
+  T.numero_alunos,
+
+  P.formacao,
+  P.tempo_experiencia,
+
+  D.densidade_populacional
+
+FROM ESCOLA E
+JOIN INFRAESTRUTURA I ON E.cod_escola = I.cod_escola
+JOIN TURMA T ON E.cod_escola = T.cod_escola
+JOIN PROFESSOR P ON P.cod_professor = T.cod_professor
+JOIN IBGE_BAIRROS D ON E.bairro = D.nome_bairro;
